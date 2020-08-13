@@ -1,0 +1,15 @@
+section.approach
+  .container
+    .title.title--with-bottom-line
+      h2.title__header Our approach
+      .title__text Check Our approaches step by step (how we do it)
+
+    ul.approach__list
+      each step in [1, 2, 3, 4]
+        li.approach__item
+          .approach__image
+            img.approach__picture(src=`../images/step-${step}.jpg` alt=`Step ${step}`)
+            .approach__step step
+          .approach__text
+            .approach__title=`Step ${step} : Heading here`
+            p.approach__description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores error labore iusto fugit voluptatem fuga asperiores praesentium unde nulla aliquid voluptatum commodi, quos aut corporis, nesciunt provident tenetur facilis a.
